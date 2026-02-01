@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact VYORAA | Let's Talk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .contact-card {
+            background: var(--bg-light);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .contact-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-red);
+            box-shadow: 0 10px 30px rgba(229, 9, 20, 0.15);
+        }
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        .contact-card p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        .whatsapp-icon { color: #25D366; }
+        .email-icon { color: var(--accent-red); }
+    </style>
+</head>
+<body>
+    <div id="preloader"><div class="preloader-content"><img src="assets/img/VYORAA-light.png" alt="VYORAA Loading..." class="preloader-logo"></div></div>
+    <div class="glow-cursor-outer"></div>
+    <div class="glow-cursor-inner"></div>
+    
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="nav-logo"><img src="assets/img/VYORAA-light.png" alt="VYORAA Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-text="Home">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" data-text="About">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link" data-text="Services">Services</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link" data-text="Portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary nav-cta magnetic-btn">Partner With Us</a>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero page-hero">
+            <div class="particles-container" id="particles-page"></div>
+            <div class="hero-content container">
+                <h1 class="hero-headline anim-load-1">LET'S CLEAR</h1>
+                <h1 class="hero-headline anim-load-2">YOUR BACKLOG.</h1>
+                <p class="hero-subline anim-load-3">
+                    You sell the work. We'll get it done. <br>
+                    No forms, no waiting. Just reach out directly.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section container fade-in">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <h2>How would you like to connect?</h2>
+                <p class="section-subtext">
+                    We are available Mon - Sat, 9AM - 100PM.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vyoraaofficial@gmail.com" target="_blank" class="contact-card magnetic-btn">
+                    <span class="contact-icon email-icon">&#9993;</span>
+                    <h3>Email Us</h3>
+                    <p>vyoraaofficial@gmail.com</p>
+                    <span style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Opens Gmail in new tab</span>
+                </a>
+
+                <a href="https://wa.me/918141481323" target="_blank" class="contact-card magnetic-btn">
+                    <span class="contact-icon whatsapp-icon">&#128172;</span>
+                    <h3>WhatsApp Us</h3>
+                    <p>+91 81414 81323</p>
+                    <span style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Chat instantly</span>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer><div class="footer-content container"><div class="footer-brand"><img src="assets/img/VYORAA-light.png" alt="VYORAA Logo" class="footer-logo"><p>WE CREATE, YOU TAKE THE CREDIT.</p></div><div class="footer-links"><h4>Social</h4><a href="#" target="_blank">LinkedIn</a><a href="#" target="_blank">Instagram</a><a href="#" target="_blank">Behance</a></div><div class="footer-links"><h4>Navigate</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a></div></div><div class="footer-bottom container"><p>&copy; 2025 VYORAA. All rights reserved. Confidential Creative Partner.</p></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
